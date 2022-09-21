@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="./css/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -24,8 +26,11 @@
     </h1>
     <p class="intro__description">Subscribe and get notified</p>
     <form class="intro__form">
-      <input type="email" name="email" id="email">
-      <button type="submit" aria-label="Notify">Notify Me</button>
+      <label for="email">
+        <input class="intro__field" type="email" name="email" id="email">
+        <span class="form__error">Please, provide a valid email</span>
+      </label>
+      <button class="intro__btn" type="submit" aria-label="Notify">Notify Me</button>
     </form>
     <img src="./images/illustration-dashboard.png" alt="" class="intro__img">
   </main>
