@@ -79,6 +79,17 @@ header {
   color: var(--error-color);
   margin-bottom: 2.4rem;
 }
+.form__congrats {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background-color: var(--primary-color);
+  font-size: 1.4rem;
+  width: 100%;
+  border-radius: 2.4rem;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0.8rem 1.6rem hsla(223, 87%, 63%, 0.4);
+}
 .intro__btn {
   padding: 1.2rem 2.4rem;
   background-color: var(--primary-color);
@@ -90,6 +101,10 @@ header {
   font-weight: 600;
   box-shadow: 0 0.8rem 1.6rem hsla(223, 87%, 63%, 0.4);
   cursor: pointer;
+  transition: opacity .5s ease;
+}
+.intro__btn:hover{
+  opacity: .8;
 }
 .intro__img {
   width: 100%;
